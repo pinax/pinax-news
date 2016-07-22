@@ -12,6 +12,8 @@ class News(models.Model):
     description = models.TextField(blank=True)
     description_html = models.TextField(blank=True, editable=False)
 
+    press_release = models.BooleanField(default=False)
+
     published_at = models.DateTimeField(default=timezone.now)
     created_at = models.DateTimeField(default=timezone.now)
 
