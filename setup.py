@@ -11,9 +11,9 @@ def read(*parts):
 
 
 setup(
-    author="",
-    author_email="",
-    description="",
+    author="Pinax Team",
+    author_email="team@pinaxproject.com",
+    description="a simple app for publishing links to news articles on your site",
     name="pinax-news",
     long_description=read("README.rst"),
     version="0.1",
