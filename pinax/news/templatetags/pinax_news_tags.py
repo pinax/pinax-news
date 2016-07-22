@@ -8,7 +8,7 @@ register = template.Library()
 
 
 @register.simple_tag
-def news(obj):
+def news():
     """
     Usage:
         {% news as var %}
