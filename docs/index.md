@@ -16,11 +16,13 @@ To install pinax-news:
 
 Add `pinax-news` to your `INSTALLED_APPS` setting:
 
+```python
     INSTALLED_APPS = (
         ...
         "pinax.news",
         ...
     )
+```
 
 ## Usage
 
