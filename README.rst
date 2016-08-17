@@ -20,6 +20,22 @@ Pinax News
    :target:  https://pypi.python.org/pypi/pinax-news/
 
 
+
+Pinax
+------
+
+Pinax is an open-source platform built on the Django Web Framework. It is an ecosystem of reusable Django apps, themes, and starter project templates. 
+This collection can be found at http://pinaxproject.com.
+
+This app was developed as part of the Pinax ecosystem but is just a Django app and can be used independently of other Pinax apps.
+
+
+pinax-news
+-----------
+
+``pinax-news`` is a simple app for publishing links to news articles on your site.
+
+
 Running the Tests
 -------------------
 
@@ -32,7 +48,7 @@ Running the Tests
 Documentation
 ---------------
 
-The ``pinax-starter-app`` documentation is currently under construction. If you would like to help us write documentation, please join our Pinax Project Slack team and let us know! The Pinax documentation is available at http://pinaxproject.com/pinax/.
+The Pinax documentation is available at http://pinaxproject.com/pinax/. The ``pinax-news`` documentation is currently under construction. If you would like to help us write documentation, please join our Pinax Project Slack team and let us know! The Pinax documentation is available at http://pinaxproject.com/pinax/.
 
 
 Contribute
