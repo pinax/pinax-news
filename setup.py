@@ -16,7 +16,7 @@ setup(
     description="a simple app for publishing links to news articles on your site",
     name="pinax-news",
     long_description=read("README.rst"),
-    version="1.1.0",
+    version="1.1.2",
     url="http://github.com/pinax/pinax-news/",
     license="MIT",
     packages=find_packages(),
