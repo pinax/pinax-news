@@ -1,5 +1,13 @@
 # Change Log
 
+## 1.1.2
+
+* fix packaging
+
+## 1.1.1
+
+* fix packaging
+
 ## 1.1.0
 
 * added support for secondary images
