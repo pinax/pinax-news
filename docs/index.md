@@ -64,16 +64,18 @@ For press releases (new stories with the press_release boolean set to `True`):
 
 And here is an example that how you can show the news or press releases:
 
-        {% for news_item in news_items %}
-            <article class="news-article">
-                <h3>
-                    <a href="{{ news_item.url }}">
-                        {% if news_item.image %}<img src="{{ news_item.image.url }}" width="168" />{% endif %}
-                        <span>{{ news_item.title }}</span>
-                    </a>
-                </h3>
-            </article>
-        {% endfor %}
+```html
+    {% for news_item in news_items %}
+        <article class="news-article" style="{% if news_item.secondary_image_thumb %}background-image:url({% static news_item.secondary_image_thumb.url %});{% endif %}">
+            <h3>
+                <a href="{{ news_item.url }}">
+                    {% if news_item.image_thumb %}<img src="{{ news_item.image_thumb.url }}" width="168" />{% endif %}
+                    <span>{{ news_item.title }}</span>
+                </a>
+            </h3>
+        </article>
+    {% endfor %}
+```
 
 Add and manage news and press releases via the Django admin.
 
