@@ -27,7 +27,7 @@ setup(
     tests_require=[
     ],
     install_requires=[
-        "django-imagekit>="
+        "django-imagekit>=3.3",
         "Markdown>=2.6.6"
     ],
     classifiers=[
