@@ -19,10 +19,32 @@ Add `pinax-news` to your `INSTALLED_APPS` setting:
 ```python
     INSTALLED_APPS = (
         ...
+        "imagekit",
         "pinax.news",
         ...
     )
 ```
+
+You will need either `PIL` or `Pillow` installed for `imagekit` to work.  We
+recommend `Pillow`:
+
+    pip install Pillow
+
+
+## Settings
+
+There are two settings that have defaults but if you want to override them you
+need to just set them to the dotted-notation path to the `ImageSpec` class that
+you wish to use to process the `image` and `secondary_image` files for the
+`image_thumb` and `secondary_image_thumb` attributes on the `News` model.
+
+```python
+PINAX_NEWS_IMAGE_THUMBNAIL_SPEC = "pinax.news.specs.ImageThumbnail"
+PINAX_NEWS_SECONDARY_IMAGE_THUMBNAIL_SPEC = "pinax.news.specs.SecondaryImageThumbnail"
+```
+
+To create your own `ImageSpec` classes you can reference the defaults, but it is
+basically subclassing `imagekit.ImageSpec`.
 
 ## Usage
 
