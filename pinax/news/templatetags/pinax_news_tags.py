@@ -3,7 +3,6 @@ from django.utils import timezone
 
 from ..models import News
 
-
 register = template.Library()
 
 

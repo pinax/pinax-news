@@ -23,7 +23,6 @@ DEFAULT_SETTINGS = dict(
         }
     },
     SITE_ID=1,
-    ROOT_URLCONF="pinax.news.tests.urls",
     SECRET_KEY="notasecret",
 )
 
