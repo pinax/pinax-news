@@ -1,7 +1,9 @@
 ![](http://pinaxproject.com/pinax-design/patches/pinax-news.svg)
 
 # Pinax News
-   
+
+[![](https://img.shields.io/pypi/v/pinax-news.svg)](https://pypi.python.org/pypi/pinax-news/)
+
 [![CircleCi](https://img.shields.io/circleci/project/github/pinax/pinax-news.svg)](https://circleci.com/gh/pinax/pinax-news)
 [![Codecov](https://img.shields.io/codecov/c/github/pinax/pinax-news.svg)](https://codecov.io/gh/pinax/pinax-news)
 [![](https://img.shields.io/github/contributors/pinax/pinax-news.svg)](https://github.com/pinax/pinax-news/graphs/contributors)
