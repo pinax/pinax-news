@@ -31,18 +31,21 @@ Pinax News
 .. image:: https://img.shields.io/badge/license-MIT-blue.svg
     :target: https://pypi.python.org/pypi/pinax-news/
 
+\ 
+
 ``pinax-news`` is a simple app for publishing links to news articles on your site.
- 
+
+
 Supported Django and Python Versions
 ------------------------------------
 
-+------------------+-----+-----+-----+-----+
-| Django \\ Python | 2.7 | 3.4 | 3.5 | 3.6 |
-+==================+=====+=====+=====+=====+
-|  1.11            |  *  |  *  |  *  |  *  |
-+------------------+-----+-----+-----+-----+
-|  2.0             |     |  *  |  *  |  *  |
-+------------------+-----+-----+-----+-----+
++-----------------+-----+-----+-----+-----+
+| Django / Python | 2.7 | 3.4 | 3.5 | 3.6 |
++=================+=====+=====+=====+=====+
+| 1.11            |  *  |  *  |  *  |  *  |
++-----------------+-----+-----+-----+-----+
+| 2.0             |     |  *  |  *  |  *  |
++-----------------+-----+-----+-----+-----+
 """
 
 setup(
@@ -51,7 +54,7 @@ setup(
     description="a simple app for publishing links to news articles on your site",
     name="pinax-news",
     long_description=LONG_DESCRIPTION,
-    version="2.0.1",
+    version="2.0.2",
     url="http://github.com/pinax/pinax-news/",
     license="MIT",
     packages=find_packages(),
