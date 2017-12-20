@@ -124,6 +124,10 @@ Add and manage news and press releases via the Django admin.
 
 ## Change Log
 
+### 2.0.1
+
+* Fix setup.py LONG_DESCRIPTION for PyPi
+
 ### 2.0.0
 
 * Add Django 2.0 compatibility testing

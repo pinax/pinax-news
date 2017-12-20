@@ -3,13 +3,16 @@ from setuptools import find_packages, setup
 LONG_DESCRIPTION = """
 .. image:: http://pinaxproject.com/pinax-design/patches/pinax-news.svg
     :target: https://pypi.python.org/pypi/pinax-news/
-===================
-Pinax Notifications
-===================
+
+==========
+Pinax News
+==========
+
 .. image:: https://img.shields.io/pypi/v/pinax-news.svg
     :target: https://pypi.python.org/pypi/pinax-news/
-.. image:: https://img.shields.io/badge/license-MIT-blue.svg
-    :target: https://pypi.python.org/pypi/pinax-news/
+
+\ 
+
 .. image:: https://img.shields.io/circleci/project/github/pinax/pinax-news.svg
     :target: https://circleci.com/gh/pinax/pinax-news
 .. image:: https://img.shields.io/codecov/c/github/pinax/pinax-news.svg
@@ -20,21 +23,26 @@ Pinax Notifications
     :target: https://github.com/pinax/pinax-news/pulls
 .. image:: https://img.shields.io/github/issues-pr-closed/pinax/pinax-news.svg
     :target: https://github.com/pinax/pinax-news/pulls?q=is%3Apr+is%3Aclosed
+
+\ 
+
 .. image:: http://slack.pinaxproject.com/badge.svg
     :target: http://slack.pinaxproject.com/
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg
+    :target: https://pypi.python.org/pypi/pinax-news/
 
 ``pinax-news`` is a simple app for publishing links to news articles on your site.
  
 Supported Django and Python Versions
 ------------------------------------
 
-+-----------------+-----+-----+-----+-----+
-| Django \ Python | 2.7 | 3.4 | 3.5 | 3.6 |
-+=================+=====+=====+=====+=====+
-| 1.11            |  *  |  *  |  *  |  *  |
-+-----------------+-----+-----+-----+-----+
-| 2.0             |     |  *  |  *  |  *  |
-+-----------------+-----+-----+-----+-----+
++------------------+-----+-----+-----+-----+
+| Django \\ Python | 2.7 | 3.4 | 3.5 | 3.6 |
++==================+=====+=====+=====+=====+
+|  1.11            |  *  |  *  |  *  |  *  |
++------------------+-----+-----+-----+-----+
+|  2.0             |     |  *  |  *  |  *  |
++------------------+-----+-----+-----+-----+
 """
 
 setup(
@@ -43,7 +51,7 @@ setup(
     description="a simple app for publishing links to news articles on your site",
     name="pinax-news",
     long_description=LONG_DESCRIPTION,
-    version="2.0.0",
+    version="2.0.1",
     url="http://github.com/pinax/pinax-news/",
     license="MIT",
     packages=find_packages(),
