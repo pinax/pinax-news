@@ -15,7 +15,6 @@ DEFAULT_SETTINGS = dict(
         "pinax.news",
         "pinax.news.tests"
     ],
-    MIDDLEWARE_CLASSES=[],
     DATABASES={
         "default": {
             "ENGINE": "django.db.backends.sqlite3",

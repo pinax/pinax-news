@@ -17,7 +17,6 @@
 
 * [About Pinax](#about-pinax)
 * [Overview](#overview)
-  * [Features](#features)
   * [Supported Django and Python versions](#supported-django-and-python-versions)
 * [Documentation](#documentation)
   * [Installation](#installation)
@@ -55,23 +54,26 @@ Django \ Python | 2.7 | 3.4 | 3.5 | 3.6
 
 To install pinax-news:
 
-    pip install pinax-news
+```commandline
+$ pip install pinax-news
+```
 
 Add `pinax-news` to your `INSTALLED_APPS` setting:
 
 ```python
-    INSTALLED_APPS = (
-        ...
-        "imagekit",
-        "pinax.news",
-        ...
-    )
+INSTALLED_APPS = [
+    # other apps
+    "imagekit",
+    "pinax.news",
+]
 ```
 
 You will need either `PIL` or `Pillow` installed for `imagekit` to work.  We
 recommend `Pillow`:
 
-    pip install Pillow
+```commandline
+$ pip install Pillow
+```
 
 ### Settings
 
@@ -94,35 +96,49 @@ In your template where you want to display news or press releases:
 
 First, load the template tags:
 
-    {% load pinax_news_tags %}
+```djangotemplate
+{% load pinax_news_tags %}
+```
 
 For news:
 
-    {% news as news_items %}
+```djangotemplate
+{% news as news_items %}
+```
 
 For press releases (new stories with the press_release boolean set to `True`):
 
-    {% press_releases as press_release_items %}
+```djangotemplate
+{% press_releases as press_release_items %}
+```
 
-And here is an example that how you can show the news or press releases:
+Here is an example news item list display:
 
-```html
-    {% for news_item in news_items %}
-        <article class="news-article" style="{% if news_item.secondary_image_thumb %}background-image:url({% static news_item.secondary_image_thumb.url %});{% endif %}">
-            <h3>
-                <a href="{{ news_item.url }}">
-                    {% if news_item.image_thumb %}<img src="{{ news_item.image_thumb.url }}" width="168" />{% endif %}
-                    <span>{{ news_item.title }}</span>
-                </a>
-            </h3>
-        </article>
-    {% endfor %}
+```djangotemplate
+{% for news_item in news_items %}
+    <article class="news-article" style="{% if news_item.secondary_image_thumb %}background-image:url({% static news_item.secondary_image_thumb.url %});{% endif %}">
+        <h3>
+            <a href="{{ news_item.url }}">
+                {% if news_item.image_thumb %}<img src="{{ news_item.image_thumb.url }}" width="168" />{% endif %}
+                <span>{{ news_item.title }}</span>
+            </a>
+        </h3>
+    </article>
+{% endfor %}
 ```
 
 Add and manage news and press releases via the Django admin.
 
 
 ## Change Log
+
+### 2.0.3
+
+* Add django>=1.11 to requirements
+* Update CI config
+* Remove doc build support
+* Add sorting guidance for 3rd-party app imports
+* Improve documentation markup
 
 ### 2.0.2
 

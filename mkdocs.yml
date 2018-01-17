@@ -1,9 +1,0 @@
-site_name: pinax-news
-pages:
-- [index.md, Home]
-- [changelog.md, Change Log]
-theme: readthedocs
-repo_url: https://github.com/pinax/pinax-news
-site_description: "a simple app for publishing links to news articles on your site"
-site_author: "Pinax Team"
-markdown_extensions: [admonition]

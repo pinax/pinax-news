@@ -1,5 +1,6 @@
 from setuptools import find_packages, setup
 
+VERSION = "2.0.3"
 LONG_DESCRIPTION = """
 .. image:: http://pinaxproject.com/pinax-design/patches/pinax-news.svg
     :target: https://pypi.python.org/pypi/pinax-news/
@@ -54,7 +55,7 @@ setup(
     description="a simple app for publishing links to news articles on your site",
     name="pinax-news",
     long_description=LONG_DESCRIPTION,
-    version="2.0.2",
+    version=VERSION,
     url="http://github.com/pinax/pinax-news/",
     license="MIT",
     packages=find_packages(),
@@ -66,6 +67,7 @@ setup(
         "Pillow"
     ],
     install_requires=[
+        "django>=1.11",
         "django-imagekit>=3.3",
         "Markdown>=2.6.6"
     ],
