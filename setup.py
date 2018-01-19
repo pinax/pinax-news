@@ -30,12 +30,11 @@ Pinax News
 .. image:: http://slack.pinaxproject.com/badge.svg
     :target: http://slack.pinaxproject.com/
 .. image:: https://img.shields.io/badge/license-MIT-blue.svg
-    :target: https://pypi.python.org/pypi/pinax-news/
+    :target: https://opensource.org/licenses/MIT/
 
 \ 
 
 ``pinax-news`` is a simple app for publishing links to news articles on your site.
-
 
 Supported Django and Python Versions
 ------------------------------------
