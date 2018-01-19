@@ -56,7 +56,7 @@ Django \ Python | 2.7 | 3.4 | 3.5 | 3.6
 
 To install pinax-news:
 
-```commandline
+```shell
 $ pip install pinax-news
 ```
 
@@ -73,7 +73,7 @@ INSTALLED_APPS = [
 You will need either `PIL` or `Pillow` installed for `imagekit` to work.  We
 recommend `Pillow`:
 
-```commandline
+```shell
 $ pip install Pillow
 ```
 
@@ -98,25 +98,25 @@ In your template where you want to display news or press releases:
 
 First, load the template tags:
 
-```djangotemplate
+```django
 {% load pinax_news_tags %}
 ```
 
 For news:
 
-```djangotemplate
+```django
 {% news as news_items %}
 ```
 
 For press releases (new stories with the press_release boolean set to `True`):
 
-```djangotemplate
+```django
 {% press_releases as press_release_items %}
 ```
 
 Here is an example news item list display:
 
-```djangotemplate
+```django
 {% for news_item in news_items %}
     <article class="news-article" style="{% if news_item.secondary_image_thumb %}background-image:url({% static news_item.secondary_image_thumb.url %});{% endif %}">
         <h3>
