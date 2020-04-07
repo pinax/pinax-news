@@ -12,7 +12,7 @@ Pinax News
 .. image:: https://img.shields.io/pypi/v/pinax-news.svg
     :target: https://pypi.python.org/pypi/pinax-news/
 
-\ 
+\
 
 .. image:: https://img.shields.io/circleci/project/github/pinax/pinax-news.svg
     :target: https://circleci.com/gh/pinax/pinax-news
@@ -25,14 +25,14 @@ Pinax News
 .. image:: https://img.shields.io/github/issues-pr-closed/pinax/pinax-news.svg
     :target: https://github.com/pinax/pinax-news/pulls?q=is%3Apr+is%3Aclosed
 
-\ 
+\
 
 .. image:: http://slack.pinaxproject.com/badge.svg
     :target: http://slack.pinaxproject.com/
 .. image:: https://img.shields.io/badge/license-MIT-blue.svg
     :target: https://opensource.org/licenses/MIT/
 
-\ 
+\
 
 ``pinax-news`` is a simple app for publishing links to news articles on your site.
 
@@ -63,7 +63,7 @@ setup(
     },
     test_suite="runtests.runtests",
     tests_require=[
-        "Pillow"
+        "pillow>=3.3.0"
     ],
     install_requires=[
         "django>=1.11",
