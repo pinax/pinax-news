@@ -10,7 +10,7 @@ from imagekit.models import ImageSpecField
 def image_upload_to(instance, filename):
     uid = str(uuid.uuid4())
     ext = filename.split(".")[-1].lower()
-    return "news-images/{}/{}.{}".format(instance.pk, uid, ext)
+    return f"news-images/{instance.pk}/{uid}.{ext}"
 
 
 class News(models.Model):
