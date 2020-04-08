@@ -67,8 +67,8 @@ setup(
     ],
     install_requires=[
         "django>=1.11",
-        "django-imagekit>=3.3",
-        "Markdown>=2.6.6"
+        "django-imagekit>=4.0.2",
+        "Markdown>=3.2.1"
     ],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
