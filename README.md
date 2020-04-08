@@ -18,7 +18,7 @@
 
 * [About Pinax](#about-pinax)
 * [Overview](#overview)
-  * [Supported Django and Python versions](#supported-django-and-python-versions)
+  * [Supported Django and Python Versions](#supported-django-and-python-versions)
 * [Documentation](#documentation)
   * [Installation](#installation)
   * [Settings](#settings)
@@ -144,7 +144,7 @@ Add and manage news and press releases via the Django admin.
 
 ### 2.0.2
 
-* setup.py changes to support PyPi doc display 
+* setup.py changes to support PyPi doc display
 
 ### 2.0.1
 
