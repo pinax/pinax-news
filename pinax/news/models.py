@@ -33,7 +33,7 @@ class News(models.Model):
     def save(self, *args, **kwargs):
         if self.description:
             self.description_html = markdown.markdown(self.description)
-        return super(News, self).save(*args, **kwargs)
+        return super().save(*args, **kwargs)
 
     class Meta:
         verbose_name_plural = "news"
