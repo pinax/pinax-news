@@ -63,7 +63,7 @@ setup(
     },
     test_suite="runtests.runtests",
     tests_require=[
-        "pillow>=3.3.0"
+        "Pillow>=7.1.1"
     ],
     install_requires=[
         "django>=2.22",
