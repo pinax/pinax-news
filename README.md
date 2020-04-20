@@ -53,7 +53,7 @@ Where you can find what you need:
 
 `pinax-news` is a simple app for publishing links to news articles on your site.
 
-#### Supported Django and Python versions
+#### Supported Django and Python Versions
 
 Django / Python | 3.6 | 3.7 | 3.8
 --------------- | --- | --- | ---
