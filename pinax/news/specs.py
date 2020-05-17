@@ -1,5 +1,4 @@
 from imagekit import ImageSpec
-
 from pilkit.processors import ResizeToFit, SmartResize
 
 
