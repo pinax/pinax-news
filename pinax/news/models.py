@@ -10,7 +10,7 @@ from imagekit.models import ImageSpecField
 def image_upload_to(instance, filename):
     uid = str(uuid.uuid4())
     ext = filename.split(".")[-1].lower()
-    return "news-images/{}/{}.{}".format(instance.pk, uid, ext)
+    return f"news-images/{instance.pk}/{uid}.{ext}"
 
 
 class News(models.Model):
@@ -33,7 +33,7 @@ class News(models.Model):
     def save(self, *args, **kwargs):
         if self.description:
             self.description_html = markdown.markdown(self.description)
-        return super(News, self).save(*args, **kwargs)
+        return super().save(*args, **kwargs)
 
     class Meta:
         verbose_name_plural = "news"
